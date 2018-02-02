@@ -1,8 +1,106 @@
-this is my first text file
-this is my first text file
-this is my first text file
-this is my first text file
-this is my first text file
-this is my first text file
-this is my first text file
-this is my first text file
+
+lngov@DESKTOP-78KOR76 MINGW64 ~
+$ cd
+
+lngov@DESKTOP-78KOR76 MINGW64 ~
+$ cd /c
+
+lngov@DESKTOP-78KOR76 MINGW64 /c
+$ ls
+'$RECYCLE.BIN'/                       PerfLogs/
+ BOOTNXT                             'Program Files'/
+'Documents and Settings'@            'Program Files (x86)'/
+ git-tutorial/                        ProgramData/
+'hell lot of plots'/                  Python27/
+ hiberfil.sys                         Recovery/
+ HP_LaserJet_Pro_M402-M403_n-dne/     swapfile.sys
+ Intel/                              'System Volume Information'/
+ LJP1100_P1560_P1600_Full_Solution/   Users/
+ OneDriveTemp/                        Windows/
+ pagefile.sys                         Windows.old/
+
+lngov@DESKTOP-78KOR76 MINGW64 /c/git-tutorial
+$ git config --global user.name "ecoli14"
+
+lngov@DESKTOP-78KOR76 MINGW64 /c/git-tutorial
+$ git config --global user.email elissa.coli@gmail.com
+
+lngov@DESKTOP-78KOR76 MINGW64 /c
+$ cd Git/
+
+lngov@DESKTOP-78KOR76 MINGW64 /c/Git
+$ ls
+
+lngov@DESKTOP-78KOR76 MINGW64 /c/Git
+$ git clone https://github.com/ecoli14/TestGit.git
+Cloning into 'TestGit'...
+remote: Counting objects: 3, done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+
+lngov@DESKTOP-78KOR76 MINGW64 /c/Git
+$ ls
+TestGit/
+
+lngov@DESKTOP-78KOR76 MINGW64 /c/Git
+$ cd TestGit/
+
+lngov@DESKTOP-78KOR76 MINGW64 /c/Git/TestGit (master)
+$ ls
+README.md
+
+lngov@DESKTOP-78KOR76 MINGW64 /c/Git/TestGit (master)
+$ ls
+README.md  test.txt.txt
+
+lngov@DESKTOP-78KOR76 MINGW64 /c/Git/TestGit (master)
+$ ls
+README.md  test.txt
+
+lngov@DESKTOP-78KOR76 MINGW64 /c/Git/TestGit (master)
+$ git add test.txt
+
+lngov@DESKTOP-78KOR76 MINGW64 /c/Git/TestGit (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   test.txt
+
+
+lngov@DESKTOP-78KOR76 MINGW64 /c/Git/TestGit (master)
+$ git commit -m"first commit" test.txt
+[master 8e866f8] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 test.txt
+
+lngov@DESKTOP-78KOR76 MINGW64 /c/Git/TestGit (master)
+$ git push -u origin master
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 296 bytes | 148.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/ecoli14/TestGit.git
+   1ed27c2..8e866f8  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+lngov@DESKTOP-78KOR76 MINGW64 /c/Git/TestGit (master)
+$ git commit -m"first commit" test.txt
+[master a5d9118] first commit
+ 1 file changed, 8 insertions(+), 1 deletion(-)
+
+lngov@DESKTOP-78KOR76 MINGW64 /c/Git/TestGit (master)
+$ git push -u origin master
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 299 bytes | 149.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/ecoli14/TestGit.git
+   8e866f8..a5d9118  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
